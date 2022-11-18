@@ -223,27 +223,30 @@ section {
     height: 100%;
     background-color: var(--color-secondary);
     position: absolute;
+    left: 0;
+    top: 0;
     z-index: -1;
     clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
     opacity: 0.4;
 }
-.background-image {
+.image {
     border-radius: var(--br-sm-2);
     height: 85%;
     width: 68%;
     margin-left: 4rem;
-   /* background-image: url("/img/code3.jpg");*/
+    /*background-image: url("/img/code3.jpg");*/
     transition: all .4s ease-in-out;
     filter: blur(2px);
     position: absolute;
     background-repeat: no-repeat;
     opacity: 0.6;
 }
+
 .content {
     img {
        
-        width: 75%;
-        height: 68%;
+        width: 85%;
+        height: 78%;
         object-fit: cover;
         transition: all .4s ease-in-out;
         filter: grayscale(100%);

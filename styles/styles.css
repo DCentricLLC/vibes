@@ -205,7 +205,7 @@ header h4 {
 /* SPLASH SCREEN */
 .intro {
   position: fixed;
-  z-index: 1;
+  z-index: 20;
   left: 0;
   top: 0;
   width: 100%;
@@ -213,12 +213,14 @@ header h4 {
   background-color: #161616;
   transition: 1s;
 }
-.sky {
+.sky  {
+  width: 500px;
+ 
   margin-top: 175px;
   margin-left: 450px;
   border: 3px solid black;
   box-shadow: 10px 5px 5px #000000;
-  
+ 
 }
 
 
@@ -260,6 +262,7 @@ header h4 {
   display: flex;
   align-items: center;
   position: relative;
+ 
 }
 
 .right-header {
@@ -268,6 +271,7 @@ header h4 {
   justify-content: center;
   padding-right: 10rem;
   margin-top: -50px;
+  margin-bottom: 50px;
 
 }
 .right-header .name {
@@ -298,7 +302,7 @@ header h4 {
   height: 85%;
   width: 68%;
   margin-left: 4rem;
-  /*background-image: url("/img/code3.jpg");*/
+  background-image: url("/img/code3.jpg");
   transition: all 0.4s ease-in-out;
   filter: blur(2px);
   position: absolute;
@@ -313,9 +317,67 @@ header h4 {
      object-fit: cover;
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
+
 }
 .content img:hover {
   filter: grayscale(0);
+}
+.fade-out-container {
+  width: -50px;
+  display: inline-block;
+  position: absolute;
+  padding: 0;
+  top: 30px;
+  left: 30px;
+}
+.head {
+  position: absolute;
+  width: 500px;
+ 
+}
+
+.code {
+  -webkit-animation: 3s ease 0s normal fowards 1 fadein infinite alternate;
+  animation: 3s ease 0s normal forwards 1 fadein;
+  animation-iteration-count: infinite;
+}
+.notes {
+  -webkit-animation: 4s ease 0s normal fowards 1 fadein infinite alternate;
+  animation: 4s ease 0s normal forwards 1 fadein;
+  animation-iteration-count: infinite;
+}
+.lang {
+  -webkit-animation: 5s ease 0s normal fowards 1 fadein infinite alternate;
+  animation: 5s ease 0s normal forwards 1 fadein;
+  animation-iteration-count: infinite;
+}
+.screens {
+  -webkit-animation: 6s ease 0s normal fowards 1 fadein infinite alternate;
+  animation: 6s ease 0s normal forwards 1 fadein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* About */
