@@ -224,19 +224,19 @@ section {
     position: absolute;
     z-index: -1;
     clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
-    opacity: 0.9;
+    opacity: 0.4;
 }
 .background-image {
     border-radius: var(--br-sm-2);
     height: 85%;
     width: 68%;
     margin-left: 4rem;
-    background-image: url('/img/code3.jpg');
+    background-image: url("/img/code3.jpg");
     transition: all .4s ease-in-out;
     filter: blur(2px);
     position: absolute;
     background-repeat: no-repeat;
-    
+    opacity: 0.4;
 }
 .content {
     img {
