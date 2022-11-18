@@ -296,7 +296,7 @@ header h4 {
   filter: blur(2px);
   position: absolute;
   background-repeat: no-repeat;
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .content img {
