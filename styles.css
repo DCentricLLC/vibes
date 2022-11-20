@@ -1,7 +1,5 @@
 
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -105,7 +103,7 @@ a {
 }
 
 header {
-  height: 100vh;
+min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
 }
@@ -945,6 +943,72 @@ header h4 {
   transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 4.3rem;
-}/*# sourceMappingURL=styles.css.map */
+}
 
-@import "./_media.css";
+@media screen and (max-width: 600px){
+ .content img {
+  width: 100%;
+  
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  margin-left: 0px;
+  }
+  header {
+    padding: 0;
+  }
+
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .header-content .left-header image {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  header .right-header {
+    padding: 2rem !important;
+  }
+
+  .left-header .h-shape {
+    display: none;
+  }
+  .right-header {
+    grid-row: 1;
+    width: 90%;
+    margin: 80px auto;
+  }
+ img {
+  top: 5px;
+}
+.name {
+  font-size: 2.5rem !important;
+}
+
+
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+    top: 10px;
+  }
+  .controlls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+    padding: 0 5px;
+  }
+  .controlls .control {
+   margin: 1rem .3rem;
+    
+  }
+  
+}
+
+
+
