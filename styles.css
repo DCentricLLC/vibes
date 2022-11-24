@@ -341,7 +341,7 @@ header h4 {
   opacity: 0.4;
 }
 
-.background-image {
+/*.background-image {
   border-radius: var(--br-sm-2);
   height: 85%;
   width: 68%;
@@ -352,7 +352,7 @@ header h4 {
   position: absolute;
   background-repeat: no-repeat;
   opacity: 0.6;
-}
+}*/
 
 .content img {
   width: 55%;
